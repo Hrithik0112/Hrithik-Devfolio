@@ -1,6 +1,6 @@
-### Hrithik Devfolio
+# Hrithik Devfolio
 
-# Developer Portfolio using Next-Js , Tailwind-CSS, typescript
+## Developer Portfolio using Next-Js , Tailwind-CSS, typescript
 
 
 
