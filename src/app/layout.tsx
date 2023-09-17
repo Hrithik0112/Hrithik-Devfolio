@@ -2,6 +2,7 @@ import Navbar from "@/components/NavBar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
+import Footer from "@/components/Footer";
 
 const firaCode = Fira_Code({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={firaCode.className}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
