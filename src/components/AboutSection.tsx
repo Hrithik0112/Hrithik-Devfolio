@@ -47,7 +47,7 @@ const AboutSection = (props: Props) => {
           {/* right */}
           <div className=" mx-auto">
             {/* <img className="mx-auto" src={require("./imgs/man.png")} alt="" /> */}
-            <Image src="/man1.png" alt="" width={339} height={507} className="ms-auto" />
+            <Image src="/man1.png" alt="" width={339} height={507} className="mx-auto" />
           </div>
         </div>
       </div>
