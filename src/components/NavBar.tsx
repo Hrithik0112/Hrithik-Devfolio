@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState<boolean>(false);
@@ -21,26 +22,26 @@ const Navbar = () => {
                 !toggle ? `right-[-100%] top-0 bottom-0` : `right-0 top-0 bottom-0`
               } bg-[#282C33] md:static`}
             >
-              <a href="#">
+              <Link href="/">
                 <li className="text-[#ABB2BF] text-[32px] my-4 md:my-auto md:text-base list-none mx-4">
                   <span className="text-[#C778DD] font-medium">#</span>home
                 </li>
-              </a>
-              <a href="#">
+              </Link>
+              <Link href="work">
                 <li className="text-[#ABB2BF] text-[32px] my-4 md:my-auto md:text-base list-none mx-4">
                   <span className="text-[#C778DD] font-medium">#</span>work
                 </li>
-              </a>
-              <a href="#">
+              </Link>
+              <Link href="about-me">
                 <li className="text-[#ABB2BF] text-[32px] my-4 md:my-auto md:text-base list-none mx-4">
                   <span className="text-[#C778DD] font-medium">#</span>about-me
                 </li>
-              </a>
-              <a href="#">
+              </Link>
+              <Link href="/contacts">
                 <li className="text-[#ABB2BF] text-[32px] my-4 md:my-auto md:text-base list-none mx-4">
                   <span className="text-[#C778DD] font-medium">#</span>contacts
                 </li>
-              </a>
+              </Link>
               <div
                 onClick={() => setToggle(false)}
                 className="close absolute block md:hidden right-6 top-6 text-white text-4xl "
