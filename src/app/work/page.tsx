@@ -1,9 +1,16 @@
+import CompleteApps from "@/components/CompleteApps";
+import SmallProjects from "@/components/SmallProjects";
 import React from "react";
 
 type Props = {};
 
 const Work = (props: Props) => {
-  return <div>Work</div>;
+  return (
+    <>
+      <CompleteApps />
+      <SmallProjects />
+    </>
+  );
 };
 
 export default Work;

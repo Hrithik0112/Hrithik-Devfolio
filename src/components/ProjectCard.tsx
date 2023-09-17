@@ -19,8 +19,12 @@ const ProjectCard = ({ img, langs, title, disc }: ProductProps) => {
         </div>
         {/* skills */}
         <div className="flex gap-2 flex-wrap p-2 border-y border-[#ABB2BF]">
-          {langs.map((e) => {
-            return <span className=" text-[#ABB2BF]">{e}</span>;
+          {langs.map((e, index) => {
+            return (
+              <span className=" text-[#ABB2BF]" key={index}>
+                {e}
+              </span>
+            );
           })}
         </div>
         {/* disc */}
