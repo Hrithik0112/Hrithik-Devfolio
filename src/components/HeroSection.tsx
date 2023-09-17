@@ -1,10 +1,17 @@
+"use client";
 import Image from "next/image";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const HeroSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <div className="px-5 max-w-[1560px] mx-auto min-h-screen pt-20 flex items-center justify-between flex-wrap">
-        <div className=" w-10/12 sm:w-8/12 mx-auto">
+        <div data-aos="fade-right" className=" w-10/12 sm:w-8/12 mx-auto">
           <h1 className="font-semibold text-[32px] text-white mb-3">
             Hrithik is a <span className="text-[#C778DD]">front-end developer</span> and{" "}
             <span className="text-[#C778DD]">Full Stack Developer</span>
@@ -16,7 +23,7 @@ const HeroSection = () => {
             Contact me!!
           </button>
         </div>
-        <div className="mx-auto">
+        <div data-aos="fade-left" data-aos-delay="400" className="mx-auto">
           <div className="">
             <Image src="/man.png" alt="manImage" width={457} height={386} />
           </div>
@@ -28,7 +35,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className=" px-5 py-10 ">
+      <div data-aos="fade-up" className=" px-5 py-10 ">
         <Image src="/quote.png" alt="quote text" className="mx-auto" width={400} height={50} />
       </div>
     </>

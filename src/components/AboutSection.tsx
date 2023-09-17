@@ -45,8 +45,7 @@ const AboutSection = (props: Props) => {
             </div>
           </div>
           {/* right */}
-          <div className=" mx-auto">
-            {/* <img className="mx-auto" src={require("./imgs/man.png")} alt="" /> */}
+          <div data-aos="fade-left" className=" mx-auto">
             <Image src="/man1.png" alt="" width={339} height={507} className="mx-auto" />
           </div>
         </div>

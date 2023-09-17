@@ -1,15 +1,21 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import Image from "next/image";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState<boolean>(false);
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 bg-[#282C33]">
+      <header data-aos="fade-up" className="fixed top-0 left-0 right-0 bg-[#282C33]">
         <div className=" px-5 max-w-[1560px] mx-auto flex items-center justify-between pt-6 my-2">
           <div className="left flex gap-2 items-center font-bold text-white text-base">
             {/* logo */}

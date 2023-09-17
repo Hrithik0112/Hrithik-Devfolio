@@ -27,7 +27,7 @@ const SkillSection = (props: Props) => {
     <>
       <div className="px-5 max-w-[1560px] mx-auto mt-20 py-10">
         {/* top */}
-        <div className=" mb-10">
+        <div data-aos="fade-left" className=" mb-10">
           <div className=" text-white w-2/3 font-medium text-[32px] flex items-center gap-2">
             <div className="">
               <span className="text-[#C778DD]">#</span>skills
@@ -38,7 +38,7 @@ const SkillSection = (props: Props) => {
         {/* bottom */}
         <div className=" flex flex-wrap gap-10 justify-between items-center text-white">
           {/* left */}
-          <div className="mx-auto">
+          <div data-aos="fade-right" className="mx-auto">
             {/* <img
               className=" w-full mx-auto"
               src={require("../../public/shapes.png")}
@@ -47,7 +47,10 @@ const SkillSection = (props: Props) => {
             <Image src="/shapes.png" alt="shapes" width={349} height={282} />
           </div>
           {/* right & mapping */}
-          <div className=" mx-auto flex justify-around md:justify-end flex-wrap w-10/12 md:w-1/2 gap-4">
+          <div
+            data-aos="fade-left"
+            className=" mx-auto flex justify-around md:justify-end flex-wrap w-10/12 md:w-1/2 gap-4"
+          >
             {skills.map(({ title, languages }) => {
               return (
                 <>
