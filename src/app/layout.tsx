@@ -1,3 +1,4 @@
+import Navbar from "@/components/NavBar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
@@ -12,7 +13,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={firaCode.className}>{children}</body>
+      <body className={firaCode.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
