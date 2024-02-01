@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub } from "react-icons/fa";
 
 type Props = {};
 
@@ -86,10 +87,9 @@ const SmallProjects = (props: Props) => {
                     <h2 className=" text-white font-medium text-2xl">{title}</h2>
                     <p className=" text-[#ABB2BF] py-4">{body}</p>
                     {/* we are only coders so maybe no one have figma projects */}
-                    <button className=" border border-[#C778DD] px-4 py-2 text-white duration-150 hover:bg-[#C778DD33]">
-                      <a href="www.github.com">
-                        Github {"<"}~{">"}
-                      </a>
+                    <button className=" py-2 px-4 flex justify-center items-center gap-4 text-white border border-[#C778DD] hover:bg-[#C778DD33] duration-150">
+                      <p>Github</p>
+                      <FaGithub />
                     </button>
                   </div>
                 </div>

@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
+import { FaGithub } from "react-icons/fa";
 
 export type ProductProps = {
   img: StaticImageData;
@@ -36,9 +37,13 @@ const ProjectCard = ({ img, langs, title, disc }: ProductProps) => {
           <h2 className="text-[#FFFFFF] text-2xl font-medium">{title}</h2>
           <p className=" py-4 text-[#ABB2BF]">{disc}</p>
           {/* btns */}
-          <div className="">
+          <div className="flex gap-4">
             <button className=" py-2 px-4 text-white border border-[#C778DD] hover:bg-[#C778DD33] duration-150">
               Live {"<"}~{">"}
+            </button>
+            <button className=" py-2 px-4 flex justify-center items-center gap-4 text-white border border-[#C778DD] hover:bg-[#C778DD33] duration-150">
+              <p>Github</p>
+              <FaGithub />
             </button>
           </div>
         </div>
