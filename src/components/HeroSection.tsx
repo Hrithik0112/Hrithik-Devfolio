@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 const HeroSection = () => {
   useEffect(() => {
@@ -13,15 +14,19 @@ const HeroSection = () => {
       <div className="px-5 max-w-[1560px] mx-auto min-h-screen pt-20 flex items-center justify-between flex-wrap">
         <div data-aos="fade-right" className=" w-10/12 sm:w-8/12 mx-auto">
           <h1 className="font-semibold text-[32px] text-white mb-3">
-            Hrithik is a <span className="text-[#C778DD]">front-end developer</span> and{" "}
-            <span className="text-[#C778DD]">Full Stack Developer</span>
+            Hrithik is a <span className="text-[#C778DD]">Front-End Alchemist</span> and{" "}
+            <span className="text-[#C778DD]"> Aspiring Full Stack Explorer</span>
           </h1>
           <p className="text-[#ABB2BF] my-6">
-            He crafts responsive websites where technologies meet creativity
+            Passionate about sculpting seamless user experiences, I'm Hrithik - a Front-End
+            Alchemist delving into the enchanting realms of Full Stack Development. Join me on this
+            journey of turning digital dreams into reality!
           </p>
-          <button className="text-white font-medium py-2 px-4 border duration-200 border-[#C778DD] hover:bg-[#C778DD33]">
-            Contact me!!
-          </button>
+          <Link href="/contacts">
+            <button className="text-white font-medium py-2 px-4 border duration-200 border-[#C778DD] hover:bg-[#C778DD33]">
+              Contact me!!
+            </button>
+          </Link>
         </div>
         <div data-aos="fade-left" data-aos-delay="400" className="mx-auto">
           <div className="">

@@ -10,21 +10,21 @@ const ProjectSection = (props: Props) => {
   const projects = [
     {
       img: first,
-      langs: ["html", "css", "javascript", "react", "tailwind css"],
-      title: "ChertNodes",
-      disc: "Minecraft servers hosting ",
+      techs: ["React", "Tailwind", " Shadcn UI", "Zustand", "Highlight.js"],
+      title: "Code Snipper",
+      disc: "A feature-rich code snippet sharing tool ",
     },
     {
       img: second,
-      langs: ["html", "css", "javascript", "Node.js"],
-      title: "ProtectX",
-      disc: "Discord anti-crash bot ",
+      techs: ["React", "Tailwind ", "TypeScript", "Framer Motion"],
+      title: "Velocity-XD",
+      disc: "A minimalistic speed typing Practice application",
     },
     {
       img: third,
-      langs: ["html", "css", "javascript", "Node.js", "python"],
-      title: "Kahoot Answers Viewer",
-      disc: "Get answers to your kahoot quiz ",
+      techs: ["React", "Material UI", "Zustand", " E-charts"],
+      title: "Quantum Console",
+      disc: "A powerfull feature-rich admin dashboard ",
     },
   ];
   return (
@@ -44,7 +44,7 @@ const ProjectSection = (props: Props) => {
           </div>
           {/* right */}
           <div className=" text-white font-medium">
-            <a href="">
+            <a href="/work">
               <span>View all ~~&gt;</span>
             </a>
           </div>
@@ -52,10 +52,10 @@ const ProjectSection = (props: Props) => {
         {/* bottom */}
         <div className="flex flex-wrap justify-between gap-4 my-12">
           {/* cards */}
-          {projects.map(({ img, langs, title, disc }) => {
+          {projects.map(({ img, techs, title, disc }) => {
             return (
               <>
-                <ProjectCard img={img} langs={langs} title={title} disc={disc} key={title} />
+                <ProjectCard img={img} langs={techs} title={title} disc={disc} key={title} />
               </>
             );
           })}

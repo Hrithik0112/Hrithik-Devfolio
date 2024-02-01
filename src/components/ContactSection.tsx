@@ -47,7 +47,7 @@ const ContactSection = (props: Props) => {
                 </div>
                 <div className="flex gap-1 items-center">
                   <AiOutlineMail />
-                  <span className="text-[#ABB2BF]">slumdog4321@gmail.com</span>
+                  <span className="text-[#ABB2BF]">hrithiknotforyou@gmail.com</span>
                 </div>
               </div>
             </div>
