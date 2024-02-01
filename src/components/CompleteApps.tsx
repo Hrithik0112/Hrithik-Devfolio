@@ -1,9 +1,10 @@
 import React from "react";
-import first from "../../public/Rectangle 22.jpg";
-import second from "../../public/Rectangle 22.png";
-import third from "../../public/Rectangle 22 (1).png";
-import forth from "../../public/Rectangle 22 (11).png";
-import fifth from "../../public/Rectangle 222.png";
+import first from "../../public/pro1.png";
+import second from "../../public/pro2.png";
+import third from "../../public/pro3.png";
+import forth from "../../public/pro4.png";
+import fifth from "../../public/pro5.png";
+import sixth from "../../public/pro6.png";
 import ProjectCard from "./ProjectCard";
 
 type Props = {};
@@ -42,7 +43,7 @@ const CompleteApps = (props: Props) => {
       disc: "A visually appealing digital calender and scheduler",
     },
     {
-      img: forth,
+      img: sixth,
       techs: ["html", "css", "javascript"],
       title: "Data-Craft",
       disc: "A fully featured Spreedsheet",

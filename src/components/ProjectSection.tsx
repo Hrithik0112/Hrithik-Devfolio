@@ -1,7 +1,7 @@
 import React from "react";
-import first from "../../public/Rectangle 22.jpg";
-import second from "../../public/Rectangle 22.png";
-import third from "../../public/Rectangle 22 (1).png";
+import first from "../../public/pro1.png";
+import second from "../../public/pro2.png";
+import third from "../../public/pro3.png";
 import ProjectCard from "./ProjectCard";
 
 type Props = {};
