@@ -12,41 +12,40 @@ const CompleteApps = (props: Props) => {
   const projects = [
     // 6 projects date
     {
-      // get img from img folder
       img: first,
-      langs: ["html", "css", "javascript", "react", "tailwind css"],
-      title: "ChertNodes",
-      disc: "Minecraft servers hosting ",
+      techs: ["React", "Tailwind", " Shadcn UI", "Zustand", "Highlight.js"],
+      title: "Code Snipper",
+      disc: "A feature-rich code snippet sharing tool ",
     },
     {
       img: second,
-      langs: ["html", "css", "javascript", "Node.js"],
-      title: "ProtectX",
-      disc: "Discord anti-crash bot ",
+      techs: ["React", "Tailwind ", "TypeScript", "Framer Motion"],
+      title: "Velocity-XD",
+      disc: "A minimalistic speed typing Practice application",
     },
     {
       img: third,
-      langs: ["html", "css", "javascript", "Node.js", "python"],
-      title: "Kahoot Answers Viewer",
-      disc: "Get answers to your kahoot quiz ",
+      techs: ["React", "Material UI", "Zustand", " E-charts"],
+      title: "Quantum Console",
+      disc: "A powerfull feature-rich admin dashboard ",
     },
     {
       img: forth,
-      langs: ["html", "css", "javascript"],
-      title: "Kotik Bot",
+      techs: ["React", "Next.js", "Tailwind ", "Google Maps API", "Google Places API"],
+      title: "Culinary Explorer",
       disc: "Discord anti-crash bot ",
     },
     {
       img: fifth,
-      langs: ["html", "TS", "Vue", "Node.js", "Less"],
-      title: "Portfolio",
-      disc: "You’re using it rn ",
+      techs: ["React", "React Hooks", "React Context", "Tailwind "],
+      title: "Time-Wrap",
+      disc: "A visually appealing digital calender and scheduler",
     },
     {
       img: forth,
-      langs: ["html", "css", "javascript"],
-      title: "Kotik Bot",
-      disc: "Discord anti-crash bot ",
+      techs: ["html", "css", "javascript"],
+      title: "Data-Craft",
+      disc: "A fully featured Spreedsheet",
     },
   ];
   return (
@@ -72,10 +71,10 @@ const CompleteApps = (props: Props) => {
           {/* projects */}
           <div className="flex flex-wrap justify-start  gap-4 my-12">
             {/* cards */}
-            {projects.map(({ img, langs, title, disc }) => {
+            {projects.map(({ img, techs, title, disc }) => {
               return (
                 <>
-                  <ProjectCard img={img} langs={langs} title={title} disc={disc} key={title} />
+                  <ProjectCard img={img} langs={techs} title={title} disc={disc} key={title} />
                 </>
               );
             })}

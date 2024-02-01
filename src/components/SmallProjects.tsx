@@ -6,42 +6,53 @@ const SmallProjects = (props: Props) => {
   let projects = [
     {
       languages: ["VUE", "CSS", "HTML"],
-      title: "Bot boilerplate",
+      title: "DIscord UI",
       body: "Start creating scalable discord.js bot with typescript in seconds",
     },
     {
       languages: ["VUE", "JS", "HTML"],
-      title: "My blog",
+      title: "Razorpay UI",
       body: "Front-end of my future blog website written in vue",
     },
     {
       languages: ["VUE", "Figma", "HTML"],
-      title: "Chess pro",
+      title: "TODO-Zustand",
       body: "Figma landing page about service for viewing chess tournaments",
     },
     {
       languages: ["React", "CSS", "HTML"],
-      title: "My blog",
+      title: "Quizard",
       body: "Front-end of my future blog website written in vue",
     },
     {
       languages: ["VUE", "CSS", "HTML"],
-      title: "My blog",
+      title: "React-Ts-TODO",
       body: "Front-end of my future blog website written in vue",
     },
     {
       languages: ["VUE", "CSS", "HTML"],
-      title: "My blog",
+      title: "Pizaa Menu",
       body: "Front-end of my future blog website written in vue",
     },
     {
       languages: ["VUE", "CSS", "HTML"],
-      title: "My blog",
+      title: "Parallex Website",
+      body: "Front-end of my future blog website written in vue",
+    },
+
+    {
+      languages: ["VUE", "CSS", "HTML"],
+      title: "The Paper Portfolio",
       body: "Front-end of my future blog website written in vue",
     },
     {
       languages: ["VUE", "CSS", "HTML"],
-      title: "My blog",
+      title: "Job Search engine",
+      body: "Front-end of my future blog website written in vue",
+    },
+    {
+      languages: ["VUE", "CSS", "HTML"],
+      title: "Dev-Color-Logs",
       body: "Front-end of my future blog website written in vue",
     },
   ];
