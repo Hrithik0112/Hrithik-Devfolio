@@ -17,36 +17,48 @@ const CompleteApps = (props: Props) => {
       techs: ["React", "Tailwind", " Shadcn UI", "Zustand", "Highlight.js"],
       title: "Code Snipper",
       disc: "A feature-rich code snippet sharing tool ",
+      live: "https://code-sniper.vercel.app/",
+      github: "https://github.com/Hrithik0112/Code-Sniper",
     },
     {
       img: second,
       techs: ["React", "Tailwind ", "TypeScript", "Framer Motion"],
       title: "Velocity-XD",
       disc: "A minimalistic speed typing Practice application",
+      live: "https://velocity-xd.vercel.app/",
+      github: "https://github.com/Hrithik0112/Velocity-XD",
     },
     {
       img: third,
       techs: ["React", "Material UI", "Zustand", " E-charts"],
       title: "Quantum Console",
       disc: "A powerfull feature-rich admin dashboard ",
+      live: "https://quantum-console.vercel.app/dashboard",
+      github: "https://github.com/Hrithik0112/Quantum-Console",
     },
     {
       img: forth,
       techs: ["React", "Next.js", "Tailwind ", "Google Maps API", "Google Places API"],
       title: "Culinary Explorer",
       disc: "Discord anti-crash bot ",
+      live: "https://culinary-explorer-eta.vercel.app/",
+      github: "https://github.com/Hrithik0112/Culinary-Explorer",
     },
     {
       img: fifth,
       techs: ["React", "React Hooks", "React Context", "Tailwind "],
       title: "Time-Wrap",
       disc: "A visually appealing digital calender and scheduler",
+      live: "https://time-wrap.vercel.app/",
+      github: "https://github.com/Hrithik0112/Time-Wrap",
     },
     {
       img: sixth,
       techs: ["html", "css", "javascript"],
       title: "Data-Craft",
       disc: "A fully featured Spreedsheet",
+      live: "https://hrithik0112.github.io/Data-craft/",
+      github: "https://github.com/Hrithik0112/Data-craft",
     },
   ];
   return (
@@ -72,10 +84,18 @@ const CompleteApps = (props: Props) => {
           {/* projects */}
           <div className="flex flex-wrap justify-start  gap-4 my-12">
             {/* cards */}
-            {projects.map(({ img, techs, title, disc }) => {
+            {projects.map(({ img, techs, title, disc, live, github }) => {
               return (
                 <>
-                  <ProjectCard img={img} langs={techs} title={title} disc={disc} key={title} />
+                  <ProjectCard
+                    img={img}
+                    langs={techs}
+                    title={title}
+                    disc={disc}
+                    key={title}
+                    live={live}
+                    github={github}
+                  />
                 </>
               );
             })}

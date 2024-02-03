@@ -13,18 +13,24 @@ const ProjectSection = (props: Props) => {
       techs: ["React", "Tailwind", " Shadcn UI", "Zustand", "Highlight.js"],
       title: "Code Snipper",
       disc: "A feature-rich code snippet sharing tool ",
+      live: "https://code-sniper.vercel.app/",
+      github: "https://github.com/Hrithik0112/Code-Sniper",
     },
     {
       img: second,
       techs: ["React", "Tailwind ", "TypeScript", "Framer Motion"],
       title: "Velocity-XD",
       disc: "A minimalistic speed typing Practice application",
+      live: "https://velocity-xd.vercel.app/",
+      github: "https://github.com/Hrithik0112/Velocity-XD",
     },
     {
       img: third,
       techs: ["React", "Material UI", "Zustand", " E-charts"],
       title: "Quantum Console",
       disc: "A powerfull feature-rich admin dashboard ",
+      live: "https://quantum-console.vercel.app/dashboard",
+      github: "https://github.com/Hrithik0112/Quantum-Console",
     },
   ];
   return (
@@ -52,10 +58,18 @@ const ProjectSection = (props: Props) => {
         {/* bottom */}
         <div className="flex flex-wrap justify-between gap-4 my-12">
           {/* cards */}
-          {projects.map(({ img, techs, title, disc }) => {
+          {projects.map(({ img, techs, title, disc, live, github }) => {
             return (
               <>
-                <ProjectCard img={img} langs={techs} title={title} disc={disc} key={title} />
+                <ProjectCard
+                  img={img}
+                  langs={techs}
+                  title={title}
+                  disc={disc}
+                  key={title}
+                  live={live}
+                  github={github}
+                />
               </>
             );
           })}

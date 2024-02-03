@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 
@@ -7,9 +8,11 @@ export type ProductProps = {
   langs: string[];
   title: string;
   disc: string;
+  live: string;
+  github: string;
 };
 
-const ProjectCard = ({ img, langs, title, disc }: ProductProps) => {
+const ProjectCard = ({ img, langs, title, disc, live, github }: ProductProps) => {
   return (
     <>
       <div
@@ -38,13 +41,17 @@ const ProjectCard = ({ img, langs, title, disc }: ProductProps) => {
           <p className=" py-4 text-[#ABB2BF]">{disc}</p>
           {/* btns */}
           <div className="flex gap-4">
-            <button className=" py-2 px-4 text-white border border-[#C778DD] hover:bg-[#C778DD33] duration-150">
-              Live {"<"}~{">"}
-            </button>
-            <button className=" py-2 px-4 flex justify-center items-center gap-4 text-white border border-[#C778DD] hover:bg-[#C778DD33] duration-150">
-              <p>Github</p>
-              <FaGithub />
-            </button>
+            <Link href={live}>
+              <button className=" py-2 px-4 text-white border border-[#C778DD] hover:bg-[#C778DD33] duration-150">
+                Live {"<"}~{">"}
+              </button>
+            </Link>
+            <Link href={github}>
+              <button className=" py-2 px-4 flex justify-center items-center gap-4 text-white border border-[#C778DD] hover:bg-[#C778DD33] duration-150">
+                <p>Github</p>
+                <FaGithub />
+              </button>
+            </Link>
           </div>
         </div>
       </div>
