@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 
@@ -6,55 +7,65 @@ type Props = {};
 const SmallProjects = (props: Props) => {
   let projects = [
     {
-      languages: ["VUE", "CSS", "HTML"],
-      title: "DIscord UI",
-      body: "Start creating scalable discord.js bot with typescript in seconds",
+      languages: ["TAILWIND-CSS", "HTML", "VITE"],
+      title: "Discord UI",
+      body: "Discord ui clone using tailwind",
+      github: "https://github.com/Hrithik0112/Discord-UI-clone",
     },
     {
-      languages: ["VUE", "JS", "HTML"],
+      languages: ["TAILWIND-CSS", "HTML", "VITE"],
       title: "Razorpay UI",
-      body: "Front-end of my future blog website written in vue",
+      body: "Razorpay ui clone using tailwind",
+      github: "https://github.com/Hrithik0112/Razorpay-UI-clone",
     },
     {
-      languages: ["VUE", "Figma", "HTML"],
+      languages: ["REACT", "TYPESCRIPT", "ZUTAND"],
       title: "TODO-Zustand",
-      body: "Figma landing page about service for viewing chess tournaments",
+      body: "A todo app using zustand",
+      github: "https://github.com/Hrithik0112/To-Do-Zustand",
     },
     {
-      languages: ["React", "CSS", "HTML"],
-      title: "Quizard",
-      body: "Front-end of my future blog website written in vue",
+      languages: ["React", "TYPESCRIPT", "ZUSTAND", "TAILWIND-CSS"],
+      title: "TRIVIZARD",
+      body: "A trivia quiz app",
+      github: "https://github.com/Hrithik0112/Trivizard",
     },
     {
-      languages: ["VUE", "CSS", "HTML"],
+      languages: ["REACT", "TYPESCRIPT"],
       title: "React-Ts-TODO",
-      body: "Front-end of my future blog website written in vue",
+      body: "A todo app using react and typescript",
+      github: "https://github.com/Hrithik0112/React-TypeScript_TodoApp",
     },
     {
-      languages: ["VUE", "CSS", "HTML"],
+      languages: ["REACT", "JAVACSRIPT"],
       title: "Pizaa Menu",
-      body: "Front-end of my future blog website written in vue",
+      body: "A menu for pizaa website",
+      github: "https://github.com/Hrithik0112/Pizaa-menu",
     },
     {
-      languages: ["VUE", "CSS", "HTML"],
+      languages: ["CSS", "HTML"],
       title: "Parallex Website",
-      body: "Front-end of my future blog website written in vue",
+      body: "A interactive parallex website",
+      github: "https://github.com/Hrithik0112/Parallax-Website",
     },
 
     {
-      languages: ["VUE", "CSS", "HTML"],
+      languages: ["JAVASCRIPT", "CSS", "HTML", "GSAP", "LOCOMOTIVE-SCROLL"],
       title: "The Paper Portfolio",
-      body: "Front-end of my future blog website written in vue",
+      body: "A interative Portfolio using GSAP",
+      github: "https://github.com/Hrithik0112/The-paper-Portfolio",
     },
     {
-      languages: ["VUE", "CSS", "HTML"],
+      languages: ["REACT", "JAVACSRIPT", "TAILWIND-CSS"],
       title: "Job Search engine",
-      body: "Front-end of my future blog website written in vue",
+      body: "A Job Search Landing page",
+      github: "https://github.com/Hrithik0112/Job_Search_Engine",
     },
     {
-      languages: ["VUE", "CSS", "HTML"],
+      languages: ["TYPESCRIPT"],
       title: "Dev-Color-Logs",
-      body: "Front-end of my future blog website written in vue",
+      body: "A NPM package for colorful console logs",
+      github: "https://github.com/Hrithik0112/dev-color-logs",
     },
   ];
   return (
@@ -71,7 +82,7 @@ const SmallProjects = (props: Props) => {
         {
           // mapping
           projects.map((e) => {
-            let { languages, title, body } = e;
+            let { languages, title, body, github } = e;
             return (
               <>
                 {/* card */}
@@ -87,10 +98,12 @@ const SmallProjects = (props: Props) => {
                     <h2 className=" text-white font-medium text-2xl">{title}</h2>
                     <p className=" text-[#ABB2BF] py-4">{body}</p>
                     {/* we are only coders so maybe no one have figma projects */}
-                    <button className=" py-2 px-4 flex justify-center items-center gap-4 text-white border border-[#C778DD] hover:bg-[#C778DD33] duration-150">
-                      <p>Github</p>
-                      <FaGithub />
-                    </button>
+                    <Link href={github}>
+                      <button className=" py-2 px-4 flex justify-center items-center gap-4 text-white border border-[#C778DD] hover:bg-[#C778DD33] duration-150">
+                        <p>Github</p>
+                        <FaGithub />
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </>
