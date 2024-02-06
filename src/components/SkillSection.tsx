@@ -7,16 +7,25 @@ const SkillSection = (props: Props) => {
   const skills = [
     {
       title: "Languages",
-      languages: ["TypeScript", "C++", "JavaScript"],
+      languages: ["C", "C++", "TypeScript", "JavaScript"],
     },
     { title: "Databases", languages: ["PostgreSQL", "MongoDB", "Supabase", "Firebase"] },
     {
       title: "Tools",
-      languages: ["VSCode", "Github", "Figma", "Git"],
+      languages: ["VSCode", "Github", "Figma", "Git", "Vercel"],
     },
     {
       title: "Other",
-      languages: ["HTML", "CSS", "Tailwind", "Material UI", "Redux", "Zustand", "ShadCN UI"],
+      languages: [
+        "HTML",
+        "CSS",
+        "Tailwind",
+        "Material UI",
+        "Redux",
+        "Zustand",
+        "ShadCN UI",
+        "React Query",
+      ],
     },
     {
       title: "Frameworks",
