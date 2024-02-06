@@ -9,10 +9,15 @@ import "aos/dist/aos.css";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState<boolean>(false);
+  const [activeTab, setActiveTab] = useState<string>("home");
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+
+  const handleTabClick = (tabName: string) => {
+    setActiveTab(tabName);
+  };
   return (
     <>
       <header data-aos="fade-up" className="fixed top-0 left-0 right-0 bg-[#282C33]">
@@ -29,22 +34,42 @@ const Navbar = () => {
               } bg-[#282C33] md:static`}
             >
               <Link href="/">
-                <li className="text-[#ABB2BF] text-[32px] my-4 md:my-auto md:text-base list-none mx-4">
+                <li
+                  className={`text-[#ABB2BF] text-[32px] my-4 md:my-auto md:text-base list-none mx-4 ${
+                    activeTab === "home" ? "text-[#C778DD] font-medium" : ""
+                  }`}
+                  onClick={() => handleTabClick("home")}
+                >
                   <span className="text-[#C778DD] font-medium">#</span>home
                 </li>
               </Link>
               <Link href="work">
-                <li className="text-[#ABB2BF] text-[32px] my-4 md:my-auto md:text-base list-none mx-4">
+                <li
+                  className={`text-[#ABB2BF] text-[32px] my-4 md:my-auto md:text-base list-none mx-4 ${
+                    activeTab === "work" ? "text-[#C778DD] font-medium" : ""
+                  }`}
+                  onClick={() => handleTabClick("work")}
+                >
                   <span className="text-[#C778DD] font-medium">#</span>work
                 </li>
               </Link>
               <Link href="about-me">
-                <li className="text-[#ABB2BF] text-[32px] my-4 md:my-auto md:text-base list-none mx-4">
+                <li
+                  className={`text-[#ABB2BF] text-[32px] my-4 md:my-auto md:text-base list-none mx-4 ${
+                    activeTab === "about-me" ? "text-[#C778DD] font-medium" : ""
+                  }`}
+                  onClick={() => handleTabClick("about-me")}
+                >
                   <span className="text-[#C778DD] font-medium">#</span>about-me
                 </li>
               </Link>
               <Link href="/contacts">
-                <li className="text-[#ABB2BF] text-[32px] my-4 md:my-auto md:text-base list-none mx-4">
+                <li
+                  className={`text-[#ABB2BF] text-[32px] my-4 md:my-auto md:text-base list-none mx-4 ${
+                    activeTab === "contacts" ? "text-[#C778DD] font-medium" : ""
+                  }`}
+                  onClick={() => handleTabClick("contacts")}
+                >
                   <span className="text-[#C778DD] font-medium">#</span>contacts
                 </li>
               </Link>

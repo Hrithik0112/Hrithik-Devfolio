@@ -48,7 +48,7 @@ const Contact = (props: Props) => {
                 {/* img */}
                 <AiOutlineMail />
                 {/* text */}
-                <span>slumdog4321@gmail.com</span>
+                <span>hrithiknotforyou@gamil.com</span>
               </div>
             </div>
           </div>

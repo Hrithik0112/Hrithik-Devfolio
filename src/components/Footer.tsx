@@ -20,7 +20,7 @@ const Footer = () => {
                 <span>Hrithik</span>
               </div>
               {/* email */}
-              <span className="text-[#ABB2BF]">slumdog4321@gmail.com</span>
+              <span className="text-[#ABB2BF]">hrithiknotforyou@gmail.com</span>
             </div>
             {/* disc */}
             <div className="text-[#ffffff]">
@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
         {/* bottom */}
         <div className="text-center text-[#ABB2BF] pb-8 mt-12">
-          © Made With Love by Hrithik 🧡 2023
+          © Made With Love by Hrithik 🧡 2024
         </div>
       </footer>
     </>
