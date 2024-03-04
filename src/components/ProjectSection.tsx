@@ -1,7 +1,7 @@
 import React from "react";
 import first from "../../public/pro1.png";
-import second from "../../public/pro2.png";
-import third from "../../public/pro3.png";
+import second from "../../public/pro7.png";
+import third from "../../public/pro2.png";
 import ProjectCard from "./ProjectCard";
 
 type Props = {};
@@ -18,19 +18,19 @@ const ProjectSection = (props: Props) => {
     },
     {
       img: second,
+      techs: ["React", "Next.js", "Tailwind ", "TypeScript", "Kinde Auth", "Convex"],
+      title: "SketcjStream.io",
+      disc: "A docs and diagrams platform for engineering teams",
+      live: "https://sketch-stream-io.vercel.app/",
+      github: "https://github.com/Hrithik0112/SketchStream.io",
+    },
+    {
+      img: third,
       techs: ["React", "Tailwind ", "TypeScript", "Framer Motion"],
       title: "Velocity-XD",
       disc: "A minimalistic speed typing Practice application",
       live: "https://velocity-xd.vercel.app/",
       github: "https://github.com/Hrithik0112/Velocity-XD",
-    },
-    {
-      img: third,
-      techs: ["React", "Material UI", "Zustand", " E-charts"],
-      title: "Quantum Console",
-      disc: "A powerfull feature-rich admin dashboard ",
-      live: "https://quantum-console.vercel.app/dashboard",
-      github: "https://github.com/Hrithik0112/Quantum-Console",
     },
   ];
   return (

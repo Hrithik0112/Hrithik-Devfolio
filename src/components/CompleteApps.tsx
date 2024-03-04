@@ -1,10 +1,11 @@
 import React from "react";
 import first from "../../public/pro1.png";
-import second from "../../public/pro2.png";
-import third from "../../public/pro3.png";
-import forth from "../../public/pro4.png";
-import fifth from "../../public/pro5.png";
-import sixth from "../../public/pro6.png";
+import second from "../../public/pro7.png";
+import third from "../../public/pro2.png";
+import forth from "../../public/pro3.png";
+import fifth from "../../public/pro4.png";
+import sixth from "../../public/pro5.png";
+import seventh from "../../public/pro6.png";
 import ProjectCard from "./ProjectCard";
 
 type Props = {};
@@ -22,6 +23,14 @@ const CompleteApps = (props: Props) => {
     },
     {
       img: second,
+      techs: ["React", "Next.js", "Tailwind ", "TypeScript", "Kinde Auth", "Convex"],
+      title: "SketcjStream.io",
+      disc: "A docs and diagrams platform for engineering teams",
+      live: "https://sketch-stream-io.vercel.app/",
+      github: "https://github.com/Hrithik0112/SketchStream.io",
+    },
+    {
+      img: third,
       techs: ["React", "Tailwind ", "TypeScript", "Framer Motion"],
       title: "Velocity-XD",
       disc: "A minimalistic speed typing Practice application",
@@ -29,7 +38,7 @@ const CompleteApps = (props: Props) => {
       github: "https://github.com/Hrithik0112/Velocity-XD",
     },
     {
-      img: third,
+      img: forth,
       techs: ["React", "Material UI", "Zustand", " E-charts"],
       title: "Quantum Console",
       disc: "A powerfull feature-rich admin dashboard ",
@@ -37,7 +46,7 @@ const CompleteApps = (props: Props) => {
       github: "https://github.com/Hrithik0112/Quantum-Console",
     },
     {
-      img: forth,
+      img: fifth,
       techs: ["React", "Next.js", "Tailwind ", "Google Maps API", "Google Places API"],
       title: "Culinary Explorer",
       disc: "Discord anti-crash bot ",
@@ -45,7 +54,7 @@ const CompleteApps = (props: Props) => {
       github: "https://github.com/Hrithik0112/Culinary-Explorer",
     },
     {
-      img: fifth,
+      img: sixth,
       techs: ["React", "React Hooks", "React Context", "Tailwind "],
       title: "Time-Wrap",
       disc: "A visually appealing digital calender and scheduler",
@@ -53,7 +62,7 @@ const CompleteApps = (props: Props) => {
       github: "https://github.com/Hrithik0112/Time-Wrap",
     },
     {
-      img: sixth,
+      img: seventh,
       techs: ["html", "css", "javascript"],
       title: "Data-Craft",
       disc: "A fully featured Spreedsheet",
