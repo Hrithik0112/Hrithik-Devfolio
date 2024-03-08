@@ -19,7 +19,7 @@ const ProjectSection = (props: Props) => {
     {
       img: second,
       techs: ["React", "Next.js", "Tailwind ", "TypeScript", "Kinde Auth", "Convex"],
-      title: "SketcjStream.io",
+      title: "SketchStream.io",
       disc: "A docs and diagrams platform for engineering teams",
       live: "https://sketch-stream-io.vercel.app/",
       github: "https://github.com/Hrithik0112/SketchStream.io",

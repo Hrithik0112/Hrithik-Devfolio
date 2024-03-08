@@ -24,7 +24,7 @@ const CompleteApps = (props: Props) => {
     {
       img: second,
       techs: ["React", "Next.js", "Tailwind ", "TypeScript", "Kinde Auth", "Convex"],
-      title: "SketcjStream.io",
+      title: "SketchStream.io",
       disc: "A docs and diagrams platform for engineering teams",
       live: "https://sketch-stream-io.vercel.app/",
       github: "https://github.com/Hrithik0112/SketchStream.io",
@@ -49,7 +49,7 @@ const CompleteApps = (props: Props) => {
       img: fifth,
       techs: ["React", "Next.js", "Tailwind ", "Google Maps API", "Google Places API"],
       title: "Culinary Explorer",
-      disc: "Discord anti-crash bot ",
+      disc: "Find Top Restaurants near you",
       live: "https://culinary-explorer-eta.vercel.app/",
       github: "https://github.com/Hrithik0112/Culinary-Explorer",
     },
